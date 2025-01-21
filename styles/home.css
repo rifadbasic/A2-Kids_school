@@ -271,6 +271,7 @@ header{
 
 /* story */
 .story{
+  padding: 60px 0;
   align-items: center;
   justify-content: center;
   background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
@@ -352,11 +353,24 @@ header{
   color: var(--white);
 }
 
+.pre button{
+  padding: 15px 17px;
+  margin-top: -65px;
+}
+
 .pre h3{
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--black);
   margin: 0 0 30px 0;
+}
+
+.eleps{
+  width: 450px;
+  height: 65px;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .story-btn-1{
@@ -384,6 +398,64 @@ header{
 }
 
 
+/* footer */
+
+footer{
+  width: 100%;
+  background-color: var(--sky-blue);
+  padding: 150px 0 50px;
+}
+
+.footer{
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+
+.footer-logo h2{
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: var(--white);
+  padding-left: 10px;
+}
+
+.footer-item{
+  margin: 0 20px;
+}
+
+.footer-item p{
+  font-weight: 300;
+  max-width: 345px;
+  margin: 35px 0;
+  color: var(--white);
+}
+
+.footer-item h3{
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 32px;
+}
+
+.footer-item ul li a{
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.link img{
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.marque marquee{
+  margin: 20px calc(100% - 80%);
+  border-radius: 8px;
+}
 
 
 /* media query for small screen*/
@@ -399,6 +471,10 @@ header{
 
   header{
     padding: 0 15px;
+  }
+
+  .navbar{
+    border-bottom: 1px solid var(--orange);
   }
 
   .nav-btn .menu-bar{
@@ -439,8 +515,9 @@ header{
   }
 
   .storys{
-    padding: 5px;
+    margin: 0 auto;
     margin-bottom: 40px;
+    justify-items: center;
   }
 
   .story-header h2{
@@ -456,7 +533,7 @@ header{
   }
 
   .all-item{
-    padding: 20px 10px;
+    padding: 20px 10px 5px;
     margin: 5px 0px;
   }
 
@@ -466,6 +543,15 @@ header{
 
   .all-item button{
     margin-top: -50px;
+  }
+
+  .footer{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+
+  .marque marquee{
+    margin: 30px 20px 20px;
   }
 }
 
@@ -537,5 +623,15 @@ header{
 
   .all-item button{
     margin-top: -50px;
+  }
+
+  .footer{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-items: center;
+  }
+
+  .marque marquee{
+    margin: 30px 20px 20px;
   }
 }
